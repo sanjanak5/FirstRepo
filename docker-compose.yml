@@ -1,0 +1,13 @@
+version: "2.0"
+services: 
+  mypharmacyteam: 
+  web:
+    build: .
+    image: qpair/sanjana_flaskapp:1.0.0
+    mem_limit: 500m
+    ports:
+       - "5000:5000"
+       - "8000:8000"
+    volumes:
+       - .:/code 
+  
